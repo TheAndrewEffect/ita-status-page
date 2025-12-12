@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://theandreweffect.github.io/ita-status-page/
 
 # For features like Last modified, you
 # need to use a Git repository. If you
