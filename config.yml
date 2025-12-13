@@ -412,6 +412,3 @@ outputFormats:
   svg:
     isPlainText: true
     mediaType: image/svg+xml
-
-params:
-  showPoweredBy: false
