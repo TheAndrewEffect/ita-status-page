@@ -144,9 +144,11 @@ params:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
     - name: UK
-      description: The main servers are located here.
-      closed: true
+      description: UK hosted services
+      closed: false
     - name: US
+      description: US hosted services
+      closed: false
     - name: Uncategorized
       untitled: true
 
@@ -158,14 +160,26 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
+    - name: Skyline
       category: UK
-    - name: Backup Gateway
+    - name: Voice
+      category: UK
+    - name: Slipstream
+      category: UK
+    - name: Dataguard
+      category: UK
+    - name: Skyline
       category: US
-    - name: Website
-      description: The web frontend for the application.
+    - name: Voice
+      category: US
+    - name: Slipstream
+      category: US
+    - name: Dataguard
+      category: US
+    - name: Support Centre
+      description: Support Portal
       category: Uncategorized
-      link: https://example.com/
+      link: https://support.itanswers.com
     - name: API
       description: The guts of the application.
       category: Uncategorized
