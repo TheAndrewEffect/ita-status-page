@@ -145,10 +145,10 @@ params:
   categories:
     - name: UK
       description: UK hosted services
-      closed: false
+      closed: true
     - name: US
       description: US hosted services
-      closed: false
+      closed: true
     - name: Uncategorized
       untitled: true
 
@@ -307,7 +307,7 @@ params:
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
   description:
-  
+
   # Tabs on homepage
   # Uncomment to enable.
   #
