@@ -180,8 +180,8 @@ params:
       description: Support Portal
       category: Uncategorized
       link: https://support.itanswers.com
-    - name: API
-      description: The guts of the application.
+    - name: Citadel
+      description: Secure Web Hosting Platform
       category: Uncategorized
     - name: Media Proxy
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
