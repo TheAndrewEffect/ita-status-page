@@ -1,0 +1,98 @@
+{{ $incidents := where .Site.RegularPages "Params.section" "issue" }}
+{{ $active := where $incidents "Params.resolved" "=" false }}
+
+{{ $isNotice := where $active "Params.severity" "=" "notice" }}
+{{ $isDisrupted := where $active "Params.severity" "=" "disrupted" }}
+{{ $isDown := where $active "Params.severity" "=" "down" }}
+
+<div class="summary status-box">
+	<div class="summary-flex">
+		<div class="status-text">
+			<strong>
+				{{ if $isDown }}
+				{{ T "isDown" }}
+				{{ else if $isDisrupted }}
+				{{ T "isDisrupted" }}
+				{{ else if $isNotice }}
+				{{ T "isNotice" }}
+				{{ else }}
+				{{ T "isOk" }}
+				{{ end }}
+			</strong>
+			<div class="summary__date clicky relative-time" onclick="location.reload()" data-time-prefix="{{ T "lastChecked" }} "
+      ></div>
+    </div>
+
+		<div class="subscribe-wrapper">
+			<a class="subscribe-button" href="https://support.itanswers.com" target="_blank" rel="noopener noreferrer">
+				Support Centre
+			</a>
+		</div>
+	</div>
+</div>
+
+<style>
+		/* Status box styling */
+		.status-box {
+			padding: 16px;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			border-radius: 4px;
+			position: relative;
+
+			background: {
+					{
+					.Site.Params.ok
+				}
+			}
+
+			;
+		}
+
+		.summary-flex {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.status-text {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.summary__date {
+			font-size: 14px;
+			margin-top: 4px;
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		/* Support link button */
+		.subscribe-wrapper {
+			position: relative;
+			z-index: 500;
+		}
+
+		.subscribe-button {
+			padding: 8px 16px;
+			font: inherit;
+			font-size: 15px;
+			border-radius: 4px;
+			cursor: pointer;
+			background: rgba(255, 255, 255, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			color: #fff;
+			transition: background 0.1s, opacity 0.1s;
+		}
+
+		.subscribe-button:hover {
+			background: rgba(255, 255, 255, 0.3);
+		}
+
+		.subscribe-button:active {
+			background: rgba(255, 255, 255, 0.4);
+		}
+
+		</style>
+
+	
