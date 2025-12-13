@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: IT Answers Status
+title: IT Answers
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://theandreweffect.github.io/ita-status-page/
+baseURL: https://status.itanswers.com
 
 # For features like Last modified, you
 # need to use a Git repository. If you
