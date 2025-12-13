@@ -3,8 +3,8 @@ header img,
 .site-header img,
 .navbar img,
 .header-logo img {
-  height: 80 px;          /* 👈 change this */
-  max-height: 80px;
+  height: 80 px !important;;          /* 👈 change this */
+  max-height: 80px !important;;
   width: auto;
 }
 
@@ -12,5 +12,5 @@ header img,
 header,
 .site-header,
 .navbar {
-  background-color: #2c2d30; /* 👈 your colour */
+  background-color: #2c2d30 !important;; /* 👈 your colour */
 }
