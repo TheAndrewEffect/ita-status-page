@@ -254,7 +254,7 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  disableIncidentHistory: false
+  disableIncidentHistory: true
 
   # Disable dark mode
   #
@@ -412,3 +412,6 @@ outputFormats:
   svg:
     isPlainText: true
     mediaType: image/svg+xml
+
+params:
+  showPoweredBy: false
