@@ -286,7 +286,7 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: logo.png
+  logo: italogo.png
 
   # This is the description that is shown
   # on the footer and meta tags.
@@ -378,8 +378,6 @@ params:
   #
   # Default: UA-00000000-1
   googleAnalytics: UA-00000000-1
-
-  showPoweredBy: false
 
 # These options affect the core of cState.
 # Please do not change them if you do not
