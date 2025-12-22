@@ -183,9 +183,6 @@ params:
     - name: Citadel
       description: Secure Web Hosting Platform
       category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
 
   # What date format to use?
   #
